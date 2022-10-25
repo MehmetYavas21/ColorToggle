@@ -20,25 +20,22 @@ body{
 }
 
 .menu-list{
-    /* margin: 10px 10px 10px 0; */
     position: relative;
     transition: all 1s ease;
 }
 
 
-/* Change the display to flex */
 .menu-list ul{  
     list-style: none;
     display: none;
+    flex-direction: column;
     line-height: 60px;
     padding-left: 0%;
-    margin-left: 0;
+    margin-left: 0px; 
     transition: all 1s ease;
 }
 
 .menu-list ul li{
-    display: flex;
-    flex-direction: column;
     width: 200px;
     border: 1px solid #f4f4f4;
     border-left: none;
@@ -55,20 +52,7 @@ nav ul li:hover{
     transition: all .5s ease-in;
 }
 
-
-nav ul li:nth-child(2){
-    background-color: red;
+nav ul li:nth-child(1){
+    background-color: #f4f4f4;
 }
 
-nav ul li:nth-child(3){
-    background-color: blue;
-}
-nav ul li:nth-child(4){
-    background-color: purple;
-}
-nav ul li:nth-child(5){
-    background-color: orange;
-}
-nav ul li:nth-child(6){
-    background-color: green;
-}
