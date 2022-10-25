@@ -28,12 +28,14 @@ let clickBtnn = function() {
 let clickMeHome = false;
 let mainColor = function(){
     let mainColorBtn = document.getElementsByTagName('body');
-    if(clickMe === false) {
+    if(clickMeHome === false) {
         mainColorBtn[0].style.backgroundColor = 'e0e4e7';
+        alert('you will change the webpage color to main color');
+
 
         mainColor = true ;
 
-    } else if(clickMe === true) {
+    } else if(clickMeHome === true) {
         mainColorBtn[0].style.backgroundColor = 'e0e4e7';
 
         mainColor = false ;
