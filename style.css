@@ -6,22 +6,6 @@ body{
     transition: all 0.5 ease-in;
 }
 
-body.redBackground{
-    background-color: red;
-}
-body.blueBackground{
-    background-color: blue;
-}
-body.purpleBackground{
-    background-color: purple;
-}
-body.orangeBackground{
-    background-color: orange;
-}
-body.greenBackground{
-    background-color: green;
-}
-
 #icon{
     width: 60px;
     position: relative;
@@ -30,13 +14,13 @@ body.greenBackground{
     padding: 5px;
 }
 #icon:hover{
-    transition: all 2s ease;
-    opacity: 0.5;
+    transition: all 0.5s ease;
+    opacity: 0.8;
     cursor: pointer;
 }
 
 .menu-list{
-    margin: 10px 10px 10px 0;
+    /* margin: 10px 10px 10px 0; */
     position: relative;
     transition: all 1s ease;
 }
@@ -51,20 +35,14 @@ body.greenBackground{
     margin-left: 0;
     transition: all 1s ease;
 }
-.menu-list.showList{
+
+.menu-list ul li{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-direction: column;
-    transition: all 1s ease;
-}
-.menu-list ul li{
-    display: block;
-    max-width: 200px;
+    width: 200px;
     border: 1px solid #f4f4f4;
     border-left: none;
     cursor: pointer;
-    text-decoration: none;
     color: #222;
     font-weight: bold;
     text-transform: uppercase;
