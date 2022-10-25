@@ -1,132 +1,123 @@
 
+const redColor = document.getElementById('color-red');
+redColor.style.backgroundColor='red';
+const blueColor = document.getElementById('color-blue');
+blueColor.style.backgroundColor='blue';
+const purpleColor = document.getElementById('color-purple');
+purpleColor.style.backgroundColor='purple';
+const orangeColor = document.getElementById('color-orange');
+orangeColor.style.backgroundColor='orange';
+const greenColor = document.getElementById('color-green');
+greenColor.style.backgroundColor='green';
 
 let naviStatus= false;
 
 let clickBtnn = function() {
-    let getMenuList = document.querySelector('.menu-list');
-    let getMenuLiEl = document.querySelector('.menu-list ul');
+    let getMenuList = document.querySelector('header .menu-list');
+    let getMenuLiEl = document.querySelector('.menu-list #menuLi');
 
         if(naviStatus === false) {
-            getMenuLiEl.style.display = 'block';
-            getMenuLiEl.style.transition= 'll 1s ease';
+            getMenuLiEl.style.display = 'flex';
             getMenuList.style.transition = 'all 1s ease';
 
             naviStatus = true ;
 
-        } else if(naviStatus === true) {
+        }  else if(naviStatus === true) {
             getMenuLiEl.style.display = 'none';
             getMenuList.style.transition = 'all 1s ease';
 
             naviStatus = false ;
-        } 
-        
-        
+        }         
 };
 
 
-
-let clickMeHome = false;
-let mainColor = function(){
-    let mainColorBtn = document.getElementsByTagName('body');
+let bodyElement = document.querySelector('body');
+const clickMeHome = false;
+const mainColor = function(){
     if(clickMeHome === false) {
-        mainColorBtn[0].style.backgroundColor = 'e0e4e7';
+        bodyElement.style.backgroundColor = '#e0e4e7';
         alert('you will change the webpage color to main color');
-
 
         mainColor = true ;
 
     } else if(clickMeHome === true) {
-        mainColorBtn[0].style.backgroundColor = 'e0e4e7';
+        bodyElement.style.backgroundColor = '';
 
         mainColor = false ;
     } 
 };
 
-
-
-let clickMeRed = false;
-let redBack = function(){
-    let redBackBttn = document.getElementsByTagName('body');
+const clickMeRed = false;
+const redBack = function(){
     if(clickMeRed === false) {
-        redBackBttn[0].style.backgroundColor = 'red';
+        bodyElement.style.backgroundColor = 'red';
         alert('you will change the webpage color to red');
 
         redBack = true ;
 
-    } else if(clickMe === true) {
-        redBackBttn[0].style.backgroundColor = 'e0e4e7';
+    } else if(clickMeRed === true) {
+        bodyElement.style.backgroundColor = '';
 
         redBack = false ;
     } 
 };
 
-
-
-
-let clickMeBlue = false;
-let blueBack = function(){
-    let blueBackBtn = document.getElementsByTagName('body');
+const clickMeBlue = false;
+const blueBack = function(){
     if(clickMeBlue === false) {
-        blueBackBtn[0].style.backgroundColor = 'blue';
+        bodyElement.style.backgroundColor = 'blue';
         alert('you will change the webpage color to blue');
 
         blueBack = true ;
 
     } else if(clickMeBlue === true) {
-        blueBackBtn[0].style.backgroundColor = '#e0e4e7';
+        bodyElement.style.backgroundColor = '#e0e4e7';
 
         blueBack = false ;
     } 
 };
 
-
-let clickMePurple = false;
-let purpleBack = function(){
-    let purpleBackBtn = document.getElementsByTagName('body');
+const clickMePurple = false;
+const purpleBack = function(){
     if(clickMePurple === false) {
-        purpleBackBtn[0].style.backgroundColor = 'purple';
+        bodyElement.style.backgroundColor = 'purple';
         alert('you will change the webpage color to purple');
 
         purpleBack = true ;
 
     } else if(clickMePurple === true) {
-        purpleBackBtn[0].style.backgroundColor = 'e0e4e7';
+        bodyElement.style.backgroundColor = 'e0e4e7';
 
         purpleBack = false ;
     } 
 };
 
-
-let clickMeOrange = false;
-let orangeBack = function(){
-    let orangeBackBtn = document.getElementsByTagName('body');
+const clickMeOrange = false;
+const orangeBack = function(){
     if(clickMeOrange === false) {
-        orangeBackBtn[0].style.backgroundColor = 'orange';
+        bodyElement.style.backgroundColor = 'orange';
         alert('you will change the webpage color to orange');
 
         orangeBack = true ;
 
     } else if(clickMeOrange === true) {
-        orangeBackBtn[0].style.backgroundColor = 'e0e4e7';
+        bodyElement.style.backgroundColor = 'e0e4e7';
 
         orangeBack = false ;
     } 
 };
 
-
-let clickMe = false;
-let greenBack = function(){
-    let greenBackBtn = document.getElementsByTagName('body');
+const clickMe = false;
+const greenBack = function(){
     if(clickMe === false) {
-        greenBackBtn[0].style.backgroundColor = 'green';
+        bodyElement.style.backgroundColor = 'green';
         alert('you will change the webpage color to green');
 
         greenBack = true ;
 
     } else if(clickMe === true) {
-        greenBackBtn[0].style.backgroundColor = 'e0e4e7';
+        bodyElement.style.backgroundColor = 'e0e4e7';
 
         greenBack = false ;
     } 
 };
-
