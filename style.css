@@ -1,0 +1,96 @@
+body{
+    background-color: #e0e4e7;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5 ease-in;
+}
+
+body.redBackground{
+    background-color: red;
+}
+body.blueBackground{
+    background-color: blue;
+}
+body.purpleBackground{
+    background-color: purple;
+}
+body.orangeBackground{
+    background-color: orange;
+}
+body.greenBackground{
+    background-color: green;
+}
+
+#icon{
+    width: 60px;
+    position: relative;
+    margin: 10px 10px;
+    background-color: rgb(20, 82, 82);
+    padding: 5px;
+}
+#icon:hover{
+    transition: all 2s ease;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.menu-list{
+    margin: 10px 10px 10px 0;
+    position: relative;
+    transition: all 1s ease;
+}
+
+
+/* Change the display to flex */
+.menu-list ul{  
+    list-style: none;
+    display: none;
+    line-height: 60px;
+    padding-left: 0%;
+    margin-left: 0;
+    transition: all 1s ease;
+}
+.menu-list.showList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 1s ease;
+}
+.menu-list ul li{
+    display: block;
+    max-width: 200px;
+    border: 1px solid #f4f4f4;
+    border-left: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+nav ul li:hover{
+    opacity: 0.8;
+    font-size: larger;
+    color: black;
+    transition: all .5s ease-in;
+}
+
+
+nav ul li:nth-child(2){
+    background-color: red;
+}
+
+nav ul li:nth-child(3){
+    background-color: blue;
+}
+nav ul li:nth-child(4){
+    background-color: purple;
+}
+nav ul li:nth-child(5){
+    background-color: orange;
+}
+nav ul li:nth-child(6){
+    background-color: green;
+}
