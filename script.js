@@ -36,7 +36,8 @@ const clickMeHome = false;
 const mainColor = function(){
     if(clickMeHome === false) {
         bodyElement.style.backgroundColor = '#e0e4e7';
-        alert('you will change the webpage color to main color');
+        //uncomment the alert function to get alerted
+        //alert('you will change the webpage color to main color');
 
         mainColor = true ;
 
@@ -51,7 +52,8 @@ const clickMeRed = false;
 const redBack = function(){
     if(clickMeRed === false) {
         bodyElement.style.backgroundColor = 'red';
-        alert('you will change the webpage color to red');
+        //uncomment the alert function to get alerted
+        //alert('you will change the webpage color to red');
 
         redBack = true ;
 
@@ -66,7 +68,8 @@ const clickMeBlue = false;
 const blueBack = function(){
     if(clickMeBlue === false) {
         bodyElement.style.backgroundColor = 'blue';
-        alert('you will change the webpage color to blue');
+        //uncomment the alert function to get alerted
+        //alert('you will change the webpage color to blue');
 
         blueBack = true ;
 
@@ -81,7 +84,8 @@ const clickMePurple = false;
 const purpleBack = function(){
     if(clickMePurple === false) {
         bodyElement.style.backgroundColor = 'purple';
-        alert('you will change the webpage color to purple');
+        //uncomment the alert function to get alerted
+        //alert('you will change the webpage color to purple');
 
         purpleBack = true ;
 
@@ -96,7 +100,8 @@ const clickMeOrange = false;
 const orangeBack = function(){
     if(clickMeOrange === false) {
         bodyElement.style.backgroundColor = 'orange';
-        alert('you will change the webpage color to orange');
+        //uncomment the alert function to get alerted
+        //alert('you will change the webpage color to orange');
 
         orangeBack = true ;
 
@@ -111,7 +116,8 @@ const clickMe = false;
 const greenBack = function(){
     if(clickMe === false) {
         bodyElement.style.backgroundColor = 'green';
-        alert('you will change the webpage color to green');
+        //uncomment the alert function to get alerted
+        //alert('you will change the webpage color to green');
 
         greenBack = true ;
 
